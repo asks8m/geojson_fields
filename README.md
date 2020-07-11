@@ -13,4 +13,10 @@ import 'package:geojson_fields/geojson_fields.dart';
 ### Fields
 
 #### MultiPolygonField
-[MultiPolygonField example]
+[MultiPolygonField example](https://github.com/sj8m/geojson_fields/blob/master/lib/example/multipolygon.dart)
+
+#### MultiPointField
+[MultiPointField example](https://github.com/sj8m/geojson_fields/blob/master/lib/example/mulitpoint.dart)
+
+#### MultiLineStringField
+[MultiLineStringField example](https://github.com/sj8m/geojson_fields/blob/master/lib/example/multineline_string.dart)
