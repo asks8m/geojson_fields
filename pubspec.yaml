@@ -1,0 +1,18 @@
+name: geojson_fields
+description: A package to parse incoming json MultiPointFields, MultiPolygonFields, MultiLineFields.
+version: 0.0.1
+author: Sam Mobach
+homepage: https://github.com/sj8m/geojson_fields
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
