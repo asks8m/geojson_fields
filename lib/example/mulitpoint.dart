@@ -5,7 +5,7 @@ import 'dart:convert';
 
 void main() async {
   List<MultiPointField> multiPointFields = [];
-  final jsonData = await File('./test/multipoint.json').readAsString().then((fileContents) => json.decode(fileContents));
+  final jsonData = await File('./multipoint.json').readAsString().then((fileContents) => json.decode(fileContents));
   for (var elem in jsonData) {
     multiPointFields.add(MultiPointField.fromJson(Map<String, dynamic>.from(elem)));
   }

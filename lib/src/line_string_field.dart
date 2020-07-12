@@ -1,40 +1,53 @@
 part of geojson_fields;
 
-/// [MultiPointField]
+/// [LineStringField]
 /// The incoming data looks like this:
 /// [
 ///  {
-///    "type": "MultiPoint",
+///    "type": "LineString",
 ///    "coordinates": [
-///      [100.0, 0.0],
-///      [101.0, 1.0]
+///      [
+///        40,
+///        5
+///      ],
+///      [
+///        41,
+///        6
+///      ]
 ///    ]
 ///  },
 ///  {
-///    "type": "MultiPoint",
+///    "type": "LineString",
 ///    "coordinates": [
-///      [100.0, 0.0],
-///      [101.0, 1.0]
+///      [
+///        40,
+///        5
+///      ],
+///      [
+///        41,
+///        6
+///      ]
 ///    ]
 ///  }
-/// ]
-class MultiPointField {
-  const MultiPointField({
+///]
+class LineStringField {
+  const LineStringField({
     @required this.type,
     @required this.coordinates
   }) :  assert(type != null),
         assert(coordinates != null);
 
+
   /// The [type] of the Field, to reconstruct the incoming json data.
   final String type;
 
-  /// The [coordinates] of the MultiPointField.
+  /// The [coordinates] of the LineStringField.
   final List<List<double>> coordinates;
 
-  /// Parse the incoming json and return a [MultiPointField]
+  /// Parse the incoming json and return a [LineStringField]
   /// Usage, assuming that u parse a incoming json source, then the runtime type is a _InternalLinkedHashMap:
-  /// MultiPointField.fromJson(Map<String, dynamic>.from(elem['location']))
-  factory MultiPointField.fromJson(Map<String, dynamic> json) {
+  /// LineStringField.fromJson(Map<String, dynamic>.from(elem['location']))
+  factory LineStringField.fromJson(Map<String, dynamic> json) {
     /// Create a variable with the type of the Field, to reconstruct the incoming json data.
     String type = json['type'];
 
@@ -46,10 +59,10 @@ class MultiPointField {
       coordinates.add(elem.cast<double>());
     });
 
-    /// Return a [MultiPointField] with the variables [type] and [coordinates]
-    return MultiPointField(
-      type: type,
-      coordinates: coordinates
+    /// Return a [LineStringField] with the variables [type] and [coordinates]
+    return LineStringField(
+        type: type,
+        coordinates: coordinates
     );
   }
 }

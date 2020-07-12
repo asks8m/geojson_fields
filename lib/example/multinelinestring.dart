@@ -5,7 +5,7 @@ import 'dart:convert';
 
 void main() async {
   List<MultiLineStringField> multiLineStringFields = [];
-  final jsonData = await File('./test/multilinestring.json').readAsString().then((fileContents) => json.decode(fileContents));
+  final jsonData = await File('./multilinestring.json').readAsString().then((fileContents) => json.decode(fileContents));
   for (var elem in jsonData) {
     multiLineStringFields.add(MultiLineStringField.fromJson(Map<String, dynamic>.from(elem)));
   }

@@ -12,11 +12,23 @@ import 'package:geojson_fields/geojson_fields.dart';
 
 ### Fields
 
+### PointField
+[PointField example](https://github.com/asks8m/geojson_fields/blob/master/lib/example/point.dart)
+
+### LineStringField
+[LineStringField example](https://github.com/asks8m/geojson_fields/blob/master/lib/example/linestring.dart)
+
+### PolygonField
+[PolygonField example](https://github.com/asks8m/geojson_fields/blob/master/lib/example/linestring.dart)
+
+### MultiPointField
+[MultiPointField example](https://github.com/asks8m/geojson_fields/blob/master/lib/example/multipoint.dart)
+
+### MultiLineStringField
+[MultiLineStringField example](https://github.com/asks8m/geojson_fields/blob/master/lib/example/multilinestring.dart)
+
 #### MultiPolygonField
-[MultiPolygonField example](https://github.com/sj8m/geojson_fields/blob/master/lib/example/multipolygon.dart)
+[MultiPolygonField example](https://github.com/asks8m/geojson_fields/blob/master/lib/example/multipolygon.dart)
 
-#### MultiPointField
-[MultiPointField example](https://github.com/sj8m/geojson_fields/blob/master/lib/example/mulitpoint.dart)
-
-#### MultiLineStringField
-[MultiLineStringField example](https://github.com/sj8m/geojson_fields/blob/master/lib/example/multineline_string.dart)
+#### GeometryCollectionField
+[GeometryCollectionField example](https://github.com/asks8m/geojson_fields/blob/master/lib/example/geometrycollection.dart)

@@ -5,7 +5,7 @@ import 'dart:convert';
 
 void main() async {
   List<MultiPolygonField> multiPolygonFields = [];
-  final jsonData = await File('./test/multipolygon.json').readAsString().then((fileContents) => json.decode(fileContents));
+  final jsonData = await File('./multipolygon.json').readAsString().then((fileContents) => json.decode(fileContents));
   for (var elem in jsonData) {
     multiPolygonFields.add(MultiPolygonField.fromJson(Map<String, dynamic>.from(elem)));
   }
