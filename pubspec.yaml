@@ -1,8 +1,7 @@
 name: geojson_fields
 description: A package to parse incoming json MultiPointFields, MultiPolygonFields, MultiLineFields.
 version: 0.0.1
-author: Sam Mobach
-homepage: https://github.com/sj8m/geojson_fields
+homepage: https://github.com/asks8m/geojson_fields
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
