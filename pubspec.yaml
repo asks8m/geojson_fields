@@ -1,6 +1,6 @@
 name: geojson_fields
 description: A package to parse incoming json MultiPointFields, MultiPolygonFields, MultiLineFields.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/asks8m/geojson_fields
 
 environment:

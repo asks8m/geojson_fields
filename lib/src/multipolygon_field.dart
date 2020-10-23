@@ -103,4 +103,9 @@ class MultiPolygonField {
         coordinates: coordinates
     );
   }
+
+  Map<String, dynamic> toJson() => {
+    'type': type,
+    'coordinates': coordinates
+  };
 }

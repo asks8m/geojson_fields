@@ -65,4 +65,9 @@ class LineStringField {
         coordinates: coordinates
     );
   }
+
+  Map<String, dynamic> toJson() => {
+    'type': type,
+    'coordinates': coordinates
+  };
 }

@@ -93,4 +93,9 @@ class PolygonField {
         coordinates: coordinates
     );
   }
+
+  Map<String, dynamic> toJson() => {
+    'type': type,
+    'coordinates': coordinates
+  };
 }
