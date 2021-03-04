@@ -20,10 +20,9 @@ part of geojson_fields;
 ///]
 class PointField {
   const PointField({
-    @required this.type,
-    @required this.coordinates
-  }) :  assert(type != null),
-        assert(coordinates != null);
+    required this.type,
+    required this.coordinates
+  });
 
 
   /// The [type] of the Field, to reconstruct the incoming json data.

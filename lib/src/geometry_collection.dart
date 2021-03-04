@@ -2,16 +2,15 @@ part of geojson_fields;
 
 class GeometryCollectionField {
   const GeometryCollectionField({
-    @required this.type,
-    @required this.geometries,
+    required this.type,
+    required this.geometries,
     this.multiPoints,
     this.multiLineStrings,
     this.lineStrings,
     this.multiPolygons,
     this.points,
     this.polygons
-  }) :  assert(type != null),
-        assert(geometries != null);
+  });
 
 
   /// The [type] of the Field, to reconstruct the incoming json data.
@@ -22,22 +21,22 @@ class GeometryCollectionField {
   final List<dynamic> geometries;
 
   /// A list of the [MultiPoint] fields inside the geometries
-  final List<MultiPointField> multiPoints;
+  final List<MultiPointField>? multiPoints;
 
   /// A list of the [MultiLineString] fields inside the geometries
-  final List<MultiLineStringField> multiLineStrings;
+  final List<MultiLineStringField>? multiLineStrings;
 
   /// A list of the [LineString] fields inside the geometries
-  final List<LineStringField> lineStrings;
+  final List<LineStringField>? lineStrings;
 
   /// A list of the [MultiPolygon] fields inside the geometries
-  final List<MultiPolygonField> multiPolygons;
+  final List<MultiPolygonField>? multiPolygons;
 
   /// A list of the [PointField] fields inside the geometries
-  final List<PointField> points;
+  final List<PointField>? points;
 
   /// A list of the [PolygonField] fields inside the geometries
-  final List<PolygonField> polygons;
+  final List<PolygonField>? polygons;
 
   /// Parse the incoming json and return a [GeometryCollectionField]
   /// Usage, assuming that u parse a incoming json source, then the runtime type is a _InternalLinkedHashMap:
